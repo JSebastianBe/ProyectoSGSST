@@ -27,5 +27,13 @@ Route::resource('movie','MovieController');
 Route::get('movie/destroy/{id}', ['as' => 'movie/destroy', 'uses'=>'MovieController@destroy']);
 
 //ruta para realizar busqueda de registros.
-Route::post('movie/search', ['as' => 'movie/search', 'uses'=>'MovieController@search']);
+Route::post('movie/searchName', ['as' => 'movie/searchName', 'uses'=>'MovieController@searchName']);
 
+//rutas para el recurso client
+Route::resource('client','ClientController');
+
+//una  nueva ruta para eliminar registros con el metodo get
+Route::get('client/destroy/{id}', ['as' => 'client/destroy', 'uses'=>'ClientController@destroy']);
+
+//ruta para realizar busqueda de registros.
+Route::post('client/searchName', ['as' => 'client/searchName', 'uses'=>'ClientController@searchName']);

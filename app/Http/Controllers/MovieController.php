@@ -1,9 +1,14 @@
 <?php namespace EjemploCRUD\Http\Controllers;
 
-use EjemploCRUD\Http\Requests;
+use EjemploCRUD\Http\Requests\CreateMovieRequest;
 use EjemploCRUD\Http\Controllers\Controller;
 use EjemploCRUD\Models\Movie as Movie;
 use Illuminate\Http\Request;
+use Illuminate\Routhing\Redirector;
+use Illuminate\Support\Facades\Validator as Validator;
+use Illuminate\Support\Facades\Session;
+
+
 
 class MovieController extends Controller {
 
@@ -14,7 +19,7 @@ class MovieController extends Controller {
 	 */
 	public function index()
 	{
-		$movies = Movie::paginate();  
+		$movies = Movie::paginate(5);  
    		return \View::make('Movie\list',compact('movies'));
 	}
 
@@ -33,10 +38,10 @@ class MovieController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store(Request $request)
+	public function store(CreateMovieRequest $request)
 	{
 		$movie = new Movie;
-    	$movie->create($request->all());
+		$movie->create($request->all());
     	return redirect('movie');
 	}
 
@@ -69,19 +74,21 @@ class MovieController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update(Request $request)
+	public function update(CreateMovieRequest $request)
 	{
 		$movie = Movie::find($request->id);
         $movie->name = $request->name;
         $movie->description = $request->description;
+        $movie->date = $request->date;
 		$movie->save();
         return redirect('movie');
 	}
 
-	public function search(Request $request){
+	public function searchName(CreateMovieRequest $request){
          $movies = Movie::where('name','like','%'.$request->name.'%')->get();
          return \View::make('Movie\list', compact('movies'));
     }
+
 	/**
 	 * Remove the specified resource from storage.
 	 *

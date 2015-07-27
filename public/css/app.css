@@ -2626,6 +2626,10 @@ select[multiple].form-group-lg .form-control {
   color: #737373;
 }
 @media (min-width: 768px) {
+  .space{
+    padding: 5px;
+  }
+
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;

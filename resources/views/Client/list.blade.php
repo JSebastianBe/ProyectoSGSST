@@ -10,22 +10,26 @@
       <div class="panel-body">  
          {!! Form::open(['method' => 'post', 'novalidate', 'class' => 'form-inline']) !!}
           <div class="form-group">
-            <label for="exampleInputName2">Name</label>
-            <input type="text" class="form-control" name = "name" >
+             <div class="input-group">
+              <label for="name" class="sr-only">Nombre</label>
+              <div class="input-group-addon" title="Telefono"><span class="glyphicon glyphicon-search"></span></div><input type="text" class="form-control" name = "name" placeholder="Nombre" >
+            </div>       
           </div>
           <button type="submit" class="btn btn-default">Search</button>
+          <a href="{{ route('client.index') }}" class="btn btn-primary" title="All"><span class="glyphicon glyphicon-list"></span></a>
+        <a href="{{ route('client.create') }}" class="btn btn-primary" title="new"><span class="glyphicon glyphicon-floppy-save"></span> </a>
         {!! Form::close() !!}
       
-        <div class="space"></div>        
-        <a href="{{ route('client.index') }}" class="btn btn-primary ">All</a>
-        <a href="{{ route('client.create') }}" class="btn btn-primary ">New</a>
+           
+        
       </div>
     </div>    
       <div class="space"></div>
       <div class="panel panel-default">
         <div class="panel-heading">Clientes</div>
         <div class="panel-body">     
-          <table class="table table-condensed table-striped table-bordered">
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped table-bordered table-hover">
             <thead>
                 <tr>
                   <th>Documento</th>
@@ -47,14 +51,15 @@
                     <td>{{ $client->email }}</td>
                     <td>{{ $client->telephone }}</td>
                     <td>
-                        <a class="btn btn-primary btn‐xs" href="{{ route('client.edit',['id' => $client->id] )}}" >Edit</a>  
-                        <a class="btn btn-danger btn‐xs" href="{{ route('client/destroy',['id' => $client->id] )}}" >Delete</a>
+                        <a class="btn btn-primary btn‐xs" href="{{ route('client.edit',['id' => $client->id] )}}" title="Edit"><span class="glyphicon glyphicon-floppy-open"></span> </a>  
+                        <a class="btn btn-danger btn‐xs" href="{{ route('client/destroy',['id' => $client->id] )}}" title="Delete"><span class="glyphicon glyphicon-floppy-remove"></span></a>
                     </td>  
                 </tr>
                 @endforeach
             </tbody>
-          </table>
-          {!!$clients->render()!!}
+            </table>
+            {!!$clients->render()!!}
+          </div>
         </div>
     </div>
   </div>

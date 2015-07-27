@@ -33,7 +33,7 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="{{ url('/') }}">Home</a></li>
+					<li><a href="{{ url('/') }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -41,12 +41,12 @@
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
 						<li><a href="{{ url('/auth/register') }}">Register</a></li>
 					@else
-						<li><a href="{{ url('/client') }}">Clients</a></li>
-						<li><a href="{{ url('/movie') }}">Movies</a></li>
+						<li><a href="{{ url('/client') }}"><span class="glyphicon glyphicon-list-alt"></span> Clientes</a></li>
+						<li><a href="{{ url('/movie') }}"><span class="glyphicon glyphicon-facetime-video"></span> Películas</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> {{ Auth::user()->name }} <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+								<li><a href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
 							</ul>
 						</li>
 					@endif

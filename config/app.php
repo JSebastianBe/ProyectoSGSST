@@ -139,11 +139,11 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'EjemploCRUD\Providers\AppServiceProvider',
-		'EjemploCRUD\Providers\BusServiceProvider',
-		'EjemploCRUD\Providers\ConfigServiceProvider',
-		'EjemploCRUD\Providers\EventServiceProvider',
-		'EjemploCRUD\Providers\RouteServiceProvider',
+		'ProyectoSGSST\Providers\AppServiceProvider',
+		'ProyectoSGSST\Providers\BusServiceProvider',
+		'ProyectoSGSST\Providers\ConfigServiceProvider',
+		'ProyectoSGSST\Providers\EventServiceProvider',
+		'ProyectoSGSST\Providers\RouteServiceProvider',
 
 		/*
 		 * Laravel Collective para generar las vistas y hacer uso de los componentes Form

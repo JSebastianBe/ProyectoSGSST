@@ -1,6 +1,6 @@
-<?php namespace EjemploCRUD\Services;
+<?php namespace ProyectoSGSST\Services;
 
-use EjemploCRUD\User;
+use ProyectoSGSST\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

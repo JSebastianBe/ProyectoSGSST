@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD;
+<?php namespace ProyectoSGSST;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

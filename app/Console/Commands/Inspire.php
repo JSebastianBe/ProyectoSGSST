@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Console\Commands;
+<?php namespace ProyectoSGSST\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

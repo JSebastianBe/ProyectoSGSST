@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Events;
+<?php namespace ProyectoSGSST\Events;
 
 abstract class Event {
 

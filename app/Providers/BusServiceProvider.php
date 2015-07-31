@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Providers;
+<?php namespace ProyectoSGSST\Providers;
 
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +16,7 @@ class BusServiceProvider extends ServiceProvider {
 		$dispatcher->mapUsing(function($command)
 		{
 			return Dispatcher::simpleMapping(
-				$command, 'EjemploCRUD\Commands', 'EjemploCRUD\Handlers\Commands'
+				$command, 'ProyectoSGSST\Commands', 'ProyectoSGSST\Handlers\Commands'
 			);
 		});
 	}

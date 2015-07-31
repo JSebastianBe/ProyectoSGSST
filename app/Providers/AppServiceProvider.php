@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Providers;
+<?php namespace ProyectoSGSST\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
-			'EjemploCRUD\Services\Registrar'
+			'ProyectoSGSST\Services\Registrar'
 		);
 	}
 

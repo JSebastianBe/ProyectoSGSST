@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Commands;
+<?php namespace ProyectoSGSST\Commands;
 
 abstract class Command {
 

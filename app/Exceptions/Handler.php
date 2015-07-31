@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Exceptions;
+<?php namespace ProyectoSGSST\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

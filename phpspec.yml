@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: EjemploCRUD
-        psr4_prefix: EjemploCRUD
+        namespace: ProyectoSGSST
+        psr4_prefix: ProyectoSGSST
         src_path: app

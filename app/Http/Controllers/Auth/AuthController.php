@@ -1,6 +1,6 @@
-<?php namespace EjemploCRUD\Http\Controllers\Auth;
+<?php namespace ProyectoSGSST\Http\Controllers\Auth;
 
-use EjemploCRUD\Http\Controllers\Controller;
+use ProyectoSGSST\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;

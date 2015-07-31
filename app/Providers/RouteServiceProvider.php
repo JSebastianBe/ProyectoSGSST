@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Providers;
+<?php namespace ProyectoSGSST\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -12,7 +12,7 @@ class RouteServiceProvider extends ServiceProvider {
 	 *
 	 * @var string
 	 */
-	protected $namespace = 'EjemploCRUD\Http\Controllers';
+	protected $namespace = 'ProyectoSGSST\Http\Controllers';
 
 	/**
 	 * Define your route model bindings, pattern filters, etc.

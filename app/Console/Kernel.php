@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Console;
+<?php namespace ProyectoSGSST\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -11,7 +11,7 @@ class Kernel extends ConsoleKernel {
 	 * @var array
 	 */
 	protected $commands = [
-		'EjemploCRUD\Console\Commands\Inspire',
+		'ProyectoSGSST\Console\Commands\Inspire',
 	];
 
 	/**

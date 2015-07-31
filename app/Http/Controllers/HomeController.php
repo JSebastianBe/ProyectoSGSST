@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Http\Controllers;
+<?php namespace ProyectoSGSST\Http\Controllers;
 
 class HomeController extends Controller {
 

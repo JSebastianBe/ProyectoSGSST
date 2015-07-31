@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Providers;
+<?php namespace ProyectoSGSST\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

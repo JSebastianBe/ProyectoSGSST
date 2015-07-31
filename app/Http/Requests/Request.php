@@ -1,4 +1,4 @@
-<?php namespace EjemploCRUD\Http\Requests;
+<?php namespace ProyectoSGSST\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
